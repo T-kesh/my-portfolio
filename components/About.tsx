@@ -28,7 +28,7 @@ export default function About() {
             is the problem-solving aspect.
           </p>
           <p>
-            When I'm not coding, I enjoy playing
+            When I&apos;m not coding, I enjoy playing
             video games, watching movies, and exploring new technologies.
           </p>
         </div>

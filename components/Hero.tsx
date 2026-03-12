@@ -13,7 +13,7 @@ export default function Hero() {
         transition={{ duration: 0.5 }}
       >
         <h1 className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-slate-200">
-          <span className="font-bold">Hello, I'm Developer.</span> I'm a{" "}
+          <span className="font-bold">Hello, I&apos;m Developer.</span> I&apos;m a{" "}
           <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">frontend engineer</span> with{" "}
           <span className="font-bold">3 years</span> of experience. I enjoy building{" "}
           <span className="italic">sites & apps</span>. My focus is{" "}
