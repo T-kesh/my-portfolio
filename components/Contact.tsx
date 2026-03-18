@@ -16,8 +16,8 @@ export default function Contact() {
       <h2 className="text-3xl font-bold mb-4 text-center text-slate-100">Contact me</h2>
       <p className="text-slate-400 -mt-2 mb-8">
         Please contact me directly at{" "}
-        <a className="underline text-cyan-400" href="mailto:example@gmail.com">
-          example@gmail.com
+        <a className="underline text-cyan-400" href="https://mail.google.com">
+          tanitoluwakeshinro@gmail.com   
         </a>{" "}
         or through this form.
       </p>

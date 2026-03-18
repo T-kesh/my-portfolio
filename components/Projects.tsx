@@ -18,9 +18,9 @@ export default function Projects() {
             transition={{ delay: index * 0.1 }}
             viewport={{ once: true }}
           >
-            <div className="h-48 bg-slate-800 w-full relative overflow-hidden flex items-center justify-center">
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 mix-blend-overlay z-10"></div>
-              <span className="text-slate-500 font-medium">[Project Preview Image]</span>
+            <div className="h-48 bg-slate-800 w-full relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent z-10"></div>
+              <img src={project.imageUrl} alt={project.title} className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500" onError={(e)=>{e.currentTarget.style.display="none"}} />
             </div>
             <div className="p-6 text-left flex flex-col h-full">
               <h3 className="text-xl font-bold text-slate-200 mb-2">{project.title}</h3>

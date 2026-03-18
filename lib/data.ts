@@ -17,14 +17,16 @@ export const projectsData = [
     description: "A modern chat application powered by AI. Features real-time messaging and dark mode.",
     tags: ["React", "Next.js", "Tailwind", "OpenAI"],
     githubUrl: "https://github.com",
-    demoUrl: "https://demo.com"
+    demoUrl: "https://demo.com",
+    imageUrl: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
   },
   {
     title: "E-Commerce Dashboard",
     description: "An admin dashboard for managing inventory and tracking sales.",
     tags: ["TypeScript", "Next.js", "Tailwind", "Prisma"],
     githubUrl: "https://github.com",
-    demoUrl: "https://demo.com"
+    demoUrl: "https://demo.com",
+    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
   }
 ] as const;
 

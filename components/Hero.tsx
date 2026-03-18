@@ -7,17 +7,17 @@ import Link from 'next/link';
 export default function Hero() {
   return (
     <section id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] pt-28 sm:pt-36">
-      <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        <h1 className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-slate-200">
-          <span className="font-bold">Hello, I&apos;m Developer.</span> I&apos;m a{" "}
-          <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">frontend engineer</span> with{" "}
-          <span className="font-bold">3 years</span> of experience. I enjoy building{" "}
-          <span className="italic">sites & apps</span>. My focus is{" "}
-          <span className="underline decoration-cyan-500">React (Next.js)</span>.
+      <div className="absolute inset-0 -z-10 flex items-center justify-center overflow-hidden pointer-events-none">
+        <div className="absolute top-[20%] w-120 h-120 bg-purple-500/20 rounded-full blur-[100px] animate-blob mix-blend-screen"></div>
+        <div className="absolute top-[30%] left-[60%] w-100 h-100 bg-cyan-500/20 rounded-full blur-[100px] animate-blob animation-delay-2000 mix-blend-screen"></div>
+        <div className="absolute top-[40%] right-[60%] h-80 w-[20rem] bg-pink-500/20 rounded-full blur-[100px] animate-blob animation-delay-4000 mix-blend-screen"></div>
+        <div className="absolute bottom-[20%] w-160 h-160 bg-blue-500/10 rounded-full blur-[120px] mix-blend-screen pointer-events-none"></div>
+      </div>
+
+      <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, ease: "easeOut" }} className="relative z-10">
+        <h1 className="mb-10 mt-4 px-4 text-3xl font-light leading-[1.4]! sm:text-5xl text-slate-200 tracking-tight">
+          <span className="font-bold block mb-2 text-white">Hello, I&apos;m a Developer.</span> 
+          I engineer <span className="font-bold heading-gradient">frontend experiences</span><br className="hidden sm:block"/> that live at the intersection of <br className="hidden sm:block"/><span className="italic font-serif text-slate-300">design & performance</span>.
         </h1>
       </motion.div>
 
@@ -36,7 +36,7 @@ export default function Hero() {
 
         <a
           className="group bg-slate-900/50 backdrop-blur border text-white px-7 py-3 border-slate-800 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition hover:bg-slate-900/80"
-          href="https://github.com"
+          href="https://github.com/T-kesh"
           target="_blank"
         >
           GitHub <Github className="opacity-70" size={18} />

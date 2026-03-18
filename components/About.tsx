@@ -12,20 +12,14 @@ export default function About() {
       viewport={{ once: true }}
       id="about"
     >
-      <h2 className="text-3xl font-bold mb-8 text-center text-slate-100">About me</h2>
+      <h2 className="text-3xl font-bold mt-8 mb-4 text-center text-slate-100">About me</h2>
       <div className="flex flex-col items-center justify-center gap-8 sm:flex-row">
-        <div className="w-32 h-32 relative rounded-full overflow-hidden border-4 border-slate-800 shadow-xl shadow-cyan-500/10 shrink-0">
-          <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-purple-500 opacity-20"></div>
-          <div className="w-full h-full bg-slate-800 flex items-center justify-center text-slate-500">
-            [IMG]
-          </div>
+        <div className="w-32 h-32 relative rounded-full overflow-hidden border-4 border-slate-800 shadow-[0_0_20px_rgba(6,182,212,0.3)] shrink-0 hover:scale-105 transition-transform duration-500">
+          <img src="/profile.jpg" alt="Profile avatar" className="w-full h-full object-cover" />
         </div>
         <div className="text-lg text-slate-300 text-left sm:w-2/3">
           <p className="mb-3">
-            After graduating with a degree in <span className="font-medium text-slate-200">Computer Science</span>, I decided to pursue my
-            passion for programming. I enrolled in a coding bootcamp and learned{" "}
-            <span className="font-medium text-slate-200">full-stack web development</span>. My favorite part of programming
-            is the problem-solving aspect.
+            I'm an Engineering student passionate about building practical tech solutions and continuously improving my skills in programming, networking, and data analysis. I enjoy solving real-world problems, learning fast, and turning ideas into efficient systems.
           </p>
           <p>
             When I&apos;m not coding, I enjoy playing

@@ -19,7 +19,7 @@ export default function Skills() {
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-slate-200">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-slate-900 border border-slate-800 rounded-xl px-5 py-3 hover:border-cyan-500/30 hover:bg-slate-800/80 transition-colors shadow-sm"
+            className="glass-panel rounded-xl px-5 py-3 hover:-translate-y-1 hover:border-cyan-400/50 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] hover:text-cyan-300 transition-all duration-300 cursor-default"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"

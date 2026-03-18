@@ -17,10 +17,10 @@ export default function Experience() {
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
           >
-            <span className="absolute flex items-center justify-center w-4 h-4 rounded-full -left-[1.9rem] sm:-left-[2.4rem] ring-4 ring-slate-950 bg-cyan-500">
+            <span className="absolute flex items-center justify-center w-4 h-4 rounded-full -left-[1.9rem] sm:-left-[2.4rem] ring-4 ring-[#030014] bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.8)]">
             </span>
-            <div className="bg-slate-900/50 backdrop-blur border border-slate-800 p-6 rounded-2xl hover:border-slate-700 transition">
-              <h3 className="flex items-center mb-1 text-lg font-bold text-slate-200">{item.title}</h3>
+            <div className="glass-panel p-6 rounded-2xl hover:border-white/20 hover:shadow-[0_0_30px_rgba(168,85,247,0.15)] transition-all duration-300">
+              <h3 className="flex items-center mb-1 text-lg font-bold text-slate-100">{item.title}</h3>
               <time className="block mb-2 text-sm font-normal leading-none text-cyan-400">{item.date} | {item.location}</time>
               <p className="text-base font-normal text-slate-400">{item.description}</p>
             </div>
