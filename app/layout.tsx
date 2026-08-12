@@ -15,13 +15,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark scroll-smooth">
-      <body className={`${outfit.className} bg-[#030014] text-slate-100 antialiased selection:bg-cyan-500/30 relative pt-28 sm:pt-36 overflow-x-hidden`}>
+    <html lang="en" className="dark scroll-smooth overflow-x-hidden">
+      <body className={`${outfit.className} bg-[#030014] text-slate-100 antialiased selection:bg-cyan-500/30 relative pt-28 sm:pt-36 overflow-x-hidden w-full max-w-[100vw]`}>
         {/* Glow Effects */}
-        <div className="bg-[#4e225e]/60 absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[12rem] sm:w-[68.75rem]"></div>
-        <div className="bg-[#1e345c]/60 absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[12rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
+        <div className="bg-[#4e225e]/60 absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[12rem] sm:w-[68.75rem] pointer-events-none"></div>
+        <div className="bg-[#1e345c]/60 absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[12rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] pointer-events-none"></div>
         
-        {children}
+        <div className="overflow-x-hidden w-full max-w-[100vw]">
+          {children}
+        </div>
         <Toaster position="top-right" />
       </body>
     </html>

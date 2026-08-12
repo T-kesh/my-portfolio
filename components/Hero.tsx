@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section id="home" className="w-full text-center scroll-mt-[100rem] pt-28 sm:pt-36 relative z-10 mb-28 sm:mb-40 flex flex-col items-center">
       {/* Background blobs no longer constrained by a max-width */}
-      <div className="absolute top-0 left-0 w-full h-full -z-10 flex items-center justify-center overflow-visible pointer-events-none">
+      <div className="absolute top-0 left-0 w-full h-full -z-10 flex items-center justify-center overflow-hidden pointer-events-none">
         <div className="absolute top-[20%] w-[30rem] h-[30rem] bg-purple-500/10 rounded-full blur-[120px] animate-blob mix-blend-screen"></div>
         <div className="absolute top-[30%] left-[60%] w-[25rem] h-[25rem] bg-cyan-500/10 rounded-full blur-[120px] animate-blob animation-delay-2000 mix-blend-screen"></div>
         <div className="absolute top-[40%] right-[60%] h-[20rem] w-[20rem] bg-pink-500/10 rounded-full blur-[120px] animate-blob animation-delay-4000 mix-blend-screen"></div>
