@@ -28,14 +28,14 @@ export default function Contact() {
   return (
     <motion.section
       id="contact"
-      className="mb-20 sm:mb-28 w-full max-w-[42rem] text-center scroll-mt-28"
+      className="mb-20 sm:mb-28 w-full max-w-[42rem] text-center scroll-mt-28 px-4"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
       viewport={{ once: true }}
     >
-      <h2 className="text-4xl font-bold mb-6 text-center text-slate-100">Let&apos;s Connect</h2>
-      <p className="text-slate-400 -mt-2 mb-10 text-lg">
+      <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6 text-center text-slate-100">Let&apos;s Connect</h2>
+      <p className="text-slate-400 mb-8 sm:mb-10 text-base sm:text-lg">
         Got a project in mind? Reach out directly at{" "}
         <a className="font-semibold text-cyan-400 hover:text-pink-400 transition-colors" href="mailto:tanitoluwakeshinro@gmail.com">
           tanitoluwakeshinro@gmail.com
@@ -56,7 +56,7 @@ export default function Contact() {
       >
         <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500/10 to-pink-500/10 rounded-[2.5rem] blur-xl opacity-0 group-hover/form:opacity-100 transition-opacity duration-700 pointer-events-none" />
         
-        <div className="bg-slate-900/40 backdrop-blur-md p-8 sm:p-10 rounded-[2rem] border border-slate-700/50 shadow-2xl relative z-10">
+        <div className="bg-slate-900/40 backdrop-blur-md p-6 sm:p-10 rounded-3xl sm:rounded-[2rem] border border-slate-700/50 shadow-2xl relative z-10">
           <div className="relative mb-6">
             <input
               className="peer w-full h-14 px-5 rounded-xl bg-slate-950/50 border border-slate-700/50 text-slate-200 placeholder-transparent focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all shadow-inner"
@@ -77,7 +77,7 @@ export default function Contact() {
 
           <div className="relative mb-8">
             <textarea
-              className="peer w-full h-48 py-4 px-5 rounded-xl bg-slate-950/50 border border-slate-700/50 text-slate-200 placeholder-transparent focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all resize-none shadow-inner"
+              className="peer w-full h-40 sm:h-48 py-4 px-5 rounded-xl bg-slate-950/50 border border-slate-700/50 text-slate-200 placeholder-transparent focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all resize-none shadow-inner"
               name="message"
               id="message"
               required

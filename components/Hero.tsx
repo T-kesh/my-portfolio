@@ -41,21 +41,21 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-5 px-4 text-lg font-medium mt-12"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 px-6 text-lg font-medium mt-12 w-full sm:w-auto"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <Link
             href="#contact"
-            className="group bg-slate-50 text-slate-950 px-8 py-3.5 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-95 transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]"
+            className="group w-full sm:w-auto justify-center bg-slate-50 text-slate-950 px-8 py-4 sm:py-3.5 flex items-center gap-2 rounded-xl sm:rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-95 transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]"
           >
             Contact me here <ArrowRight className="opacity-70 group-hover:translate-x-1.5 transition-transform" size={18} />
           </Link>
 
-          <div className="flex gap-4">
+          <div className="flex gap-4 w-full sm:w-auto">
             <a
-              className="group bg-slate-900/50 backdrop-blur-md border border-slate-700/50 text-white px-7 py-3.5 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-95 transition-all hover:bg-slate-800/80 hover:border-slate-600"
+              className="group flex-1 sm:flex-none justify-center bg-slate-900/50 backdrop-blur-md border border-slate-700/50 text-white px-7 py-4 sm:py-3.5 flex items-center gap-2 rounded-xl sm:rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-95 transition-all hover:bg-slate-800/80 hover:border-slate-600"
               href="https://github.com/T-kesh"
               target="_blank"
             >
@@ -63,7 +63,7 @@ export default function Hero() {
             </a>
 
             <a
-              className="group bg-slate-900/50 backdrop-blur-md border border-slate-700/50 text-white p-4 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-95 transition-all hover:bg-slate-800/80 hover:border-cyan-500/50 hover:text-cyan-400 shadow-[0_0_0_rgba(34,211,238,0)] hover:shadow-[0_0_20px_rgba(34,211,238,0.2)]"
+              className="group flex-[0.3] sm:flex-none justify-center bg-slate-900/50 backdrop-blur-md border border-slate-700/50 text-white p-4 flex items-center gap-2 rounded-xl sm:rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-95 transition-all hover:bg-slate-800/80 hover:border-cyan-500/50 hover:text-cyan-400 shadow-[0_0_0_rgba(34,211,238,0)] hover:shadow-[0_0_20px_rgba(34,211,238,0.2)]"
               href="https://linkedin.com"
               target="_blank"
             >
