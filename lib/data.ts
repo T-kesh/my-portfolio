@@ -8,39 +8,53 @@ export const links = [
 ] as const;
 
 export const skillsData = [
-  "HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Git", "Tailwind CSS", "Framer Motion", "PostgreSQL", "Prisma"
+  "HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Git", "Tailwind CSS", "Framer Motion", "Solidity", "Web3.js", "Ethers.js"
 ] as const;
 
 export const projectsData = [
   {
-    title: "AI Chat Application",
-    description: "A modern chat application powered by AI. Features real-time messaging and dark mode.",
-    tags: ["React", "Next.js", "Tailwind", "OpenAI"],
+    title: "Web3Nova Platform",
+    description: "Contributed to the frontend development of Web3Nova, a comprehensive launchpad offering Web3 education bootcamps and premium digital services.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Web3"],
     githubUrl: "https://github.com",
-    demoUrl: "https://demo.com",
-    imageUrl: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
+    demoUrl: "http://web3nova.org/",
+    imageUrl: "/web3nova.png"
   },
   {
-    title: "E-Commerce Dashboard",
-    description: "An admin dashboard for managing inventory and tracking sales.",
-    tags: ["TypeScript", "Next.js", "Tailwind", "Prisma"],
+    title: "DUEL - AI Card Battle",
+    description: "Developed an AI-powered card battle game built for Celo MiniPay. Players duel against CIPHER (the AI) to earn USDm rewards.",
+    tags: ["React", "Next.js", "Celo", "Web3"],
     githubUrl: "https://github.com",
-    demoUrl: "https://demo.com",
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+    demoUrl: "https://duels-flame.vercel.app",
+    imageUrl: "/duel.png"
+  },
+  {
+    title: "AjoClub",
+    description: "Developed AjoClub, a platform for onchain rotating savings clubs built on the Celo blockchain.",
+    tags: ["Next.js", "React", "Celo", "Web3"],
+    githubUrl: "https://github.com",
+    demoUrl: "https://ajoclub.vercel.app/",
+    imageUrl: "/ajoclub.png"
   }
 ] as const;
 
 export const experienceData = [
   {
-    title: "Frontend Developer",
-    location: "Tech Corp",
-    description: "Built scalable web applications using React and Next.js.",
-    date: "2023 - Present",
+    title: "Software Developer",
+    location: "web3nova",
+    description: "Started my journey here, focusing on Web3 technologies and decentralized applications.",
+    date: "2026 - Present",
   },
   {
-    title: "Web Developer Intern",
-    location: "Startup Inc",
-    description: "Assisted in the development of main product features.",
-    date: "2022 - 2023",
+    title: "Open Source Contributor",
+    location: "Remote",
+    description: "Actively contributed to major open source projects including the Drips protocol and the Grantfo platform.",
+    date: "2026",
+  },
+  {
+    title: "Protocol Developer",
+    location: "Talent Protocol & Celo",
+    description: "Worked on Talent Protocol's talent app, with a specific focus and contribution to Celo's Proof of Ship initiative.",
+    date: "2026",
   }
 ] as const;

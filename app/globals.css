@@ -4,6 +4,7 @@
   --animate-blob: blob 7s infinite;
   --animate-shimmer: shimmer 2s linear infinite;
   --animate-fade-in-up: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-marquee: marquee 25s linear infinite;
   
   @keyframes blob {
     0% { transform: translate(0px, 0px) scale(1); }
@@ -21,6 +22,11 @@
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
 }
 
 html {
@@ -29,15 +35,15 @@ html {
 
 body {
   background-color: #030014;
-  background-image: radial-gradient(circle at 50% 0%, #1a103c 0%, transparent 70%);
+  background-image: radial-gradient(circle at 50% 0%, rgba(26, 16, 60, 0.5) 0%, transparent 70%);
 }
 
 .glass-panel {
-  background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
 
 .heading-gradient {
@@ -47,4 +53,28 @@ body {
   background-image: linear-gradient(to right, #22d3ee, #a855f7, #ec4899);
   animation: shimmer 4s infinite linear;
   background-size: 200% auto;
+}
+
+/* Spotlight effect base styles */
+.spotlight-card {
+  position: relative;
+}
+.spotlight-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(
+    var(--spotlight-angle, 0deg),
+    rgba(255,255,255,0.1),
+    transparent 80%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
